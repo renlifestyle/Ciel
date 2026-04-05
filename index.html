@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciel Finance Tool - Policies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 1em;
+        }
+        .policy-link {
+            cursor: pointer;
+            color: #0066cc;
+            text-decoration: underline;
+            margin: 0.5em 0;
+            display: inline-block;
+        }
+        .policy-content {
+            display: none;
+            margin-top: 0.5em;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h1>利用規約・プライバシーポリシー</h1>
+
+    <div>
+        <span class="policy-link" onclick="toggleContent('terms')">利用規約</span>
+        <div id="terms" class="policy-content">
+            <pre>
+# Terms of Service - Ciel Finance Tool
+
+Last updated: April 2026
+
+## 1. Service Description
+Ciel Finance Tool is a personal content 
+management system for educational finance 
+content.
+
+## 2. User Responsibilities
+Users are responsible for all content 
+posted through this tool.
+
+## 3. Disclaimer
+All financial information is for 
+educational purposes only and does not 
+constitute investment advice.
+
+## 4. Contact
+For inquiries, contact via TikTok 
+developer portal.
+            </pre>
+        </div>
+    </div>
+
+    <div>
+        <span class="policy-link" onclick="toggleContent('privacy')">プライバシーポリシー</span>
+        <div id="privacy" class="policy-content">
+            <pre>
+# Privacy Policy - Ciel Finance Tool
+
+Last updated: April 2026
+
+## 1. Data Collection
+This tool only accesses data necessary 
+for content posting functionality.
+
+## 2. Data Usage
+Collected data is used solely for 
+posting content to the authorized 
+TikTok account.
+
+## 3. Data Sharing
+No user data is shared with third parties.
+
+## 4. Data Storage
+Authentication tokens are stored locally 
+and securely on the developer's machine.
+
+## 5. Contact
+For privacy concerns, contact via 
+TikTok developer portal.
+            </pre>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            const el = document.getElementById(id);
+            if (el.style.display === 'none' || el.style.display === '') {
+                el.style.display = 'block';
+            } else {
+                el.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
